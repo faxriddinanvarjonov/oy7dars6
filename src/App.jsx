@@ -123,22 +123,22 @@ function App() {
                       type="number"
                     />
                   </form>
-                  <div className="flex flex-col gap-2">
+                  <form onSubmit={handlesubmit} className="flex flex-col gap-2">
                     <p className="text-[10px] sm:text-[14px]">Short Breat</p>{" "}
                     <input
                       ref={shortref}
                       className="input w-[50px] sm:w-[120px] bg-slate-200"
                       type="number"
                     />
-                  </div>
-                  <div className="flex flex-col gap-2">
+                  </form>
+                  <form onSubmit={handlesubmit} className="flex flex-col gap-2">
                     <p className="text-[10px] sm:text-[14px]">Long Break</p>{" "}
                     <input
                       ref={longref}
                       className="input w-[50px] sm:w-[120px] bg-slate-200"
                       type="number"
                     />
-                  </div>
+                  </form>
                 </div>
               </div>
               <form method="dialog" className="modal-backdrop">
