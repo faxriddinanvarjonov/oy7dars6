@@ -50,7 +50,7 @@ function App() {
       }`}
     >
       <div className="max-w-[600px] mx-auto">
-        <header className="flex justify-between items-center border-b pb-6 border-[#A74242]">
+        <header className="flex justify-between items-center border-b pb-6 border-opacity-30">
           <div className="flex items-center gap-2 cursor-pointer">
             <img
               data-from="Saepul Nahwan"
@@ -62,8 +62,6 @@ function App() {
             <p className="text-2xl text-slate-200">Pomofocus</p>
           </div>
           <div className="flex gap-4">
-            {/* Open the modal using document.getElementById('ID').showModal() method */}
-            {/* Open the modal using document.getElementById('ID').showModal() method */}
             <button
               id="button"
               className="text-lg btn bg-opacity-40 bg-white text-[#aaaaaa]"
@@ -161,8 +159,8 @@ function App() {
               onClick={() => {
                 LinkChange("Pomodoro");
               }}
-              className={`btn btn-sm border-none hover:bg-[#A44E4E] hover:text-white text-slate-800 ${
-                link == "Pomodoro" && "bg-[#A44E4E] text-white"
+              className={`btn btn-sm border-none hover:bg-opacity-30 hover:text-white text-slate-800 ${
+                link == "Pomodoro" && " bg-opacity-30 text-white"
               }`}
             >
               Pomodoro
@@ -171,8 +169,8 @@ function App() {
               onClick={() => {
                 LinkChange("Short");
               }}
-              className={`btn btn-sm border-none hover:bg-[#A44E4E] hover:text-white text-slate-800 ${
-                link == "Short" && "bg-[#A44E4E] text-white"
+              className={`btn btn-sm border-none hover:bg-opacity-30 hover:text-white text-slate-800 ${
+                link == "Short" && " bg-opacity-30 text-white"
               }`}
             >
               Short Break
@@ -181,8 +179,8 @@ function App() {
               onClick={() => {
                 LinkChange("Long");
               }}
-              className={`btn btn-sm border-none hover:bg-[#A44E4E] hover:text-white text-slate-800 ${
-                link == "Long" && "bg-[#A44E4E] text-white"
+              className={`btn btn-sm border-none hover:bg-opacity-30 hover:text-white text-slate-800 ${
+                link == "Long" && " bg-opacity-30 text-white"
               }`}
             >
               Long Break
@@ -210,7 +208,7 @@ function App() {
               </span>
             </div>
           </div>
-          <button className="btn text-red-500 text-xl uppercase font-bold shadow-xl rounded w-48 h-14">
+          <button className="btn text-opacity-80 text-xl uppercase font-bold shadow-xl rounded w-48 h-14">
             {true ? "Start" : "Pause"}
           </button>
         </div>
