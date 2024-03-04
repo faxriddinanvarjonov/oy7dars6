@@ -40,7 +40,15 @@ function App() {
   }
 
   return (
-    <div className="container h-screen pt-6 mx-auto">
+    <div
+      className={`container h-screen pt-6 mx-auto bg-[#BA4949] max-w-full transition-colors duration-300 ease-in ${
+        link == "Pomodoro"
+          ? "bg-[#A44E4E]"
+          : link == "Short"
+          ? "bg-[#397097]"
+          : "bg-[#518A58]"
+      }`}
+    >
       <div className="max-w-[600px] mx-auto">
         <header className="flex justify-between items-center border-b pb-6 border-[#A74242]">
           <div className="flex items-center gap-2 cursor-pointer">
@@ -58,7 +66,7 @@ function App() {
             {/* Open the modal using document.getElementById('ID').showModal() method */}
             <button
               id="button"
-              className="text-lg btn bg-red-300 text-[#aaaaaa]"
+              className="text-lg btn bg-opacity-40 bg-white text-[#aaaaaa]"
               onClick={() => {
                 document.getElementById("my_modal_2").showModal();
               }}
@@ -147,7 +155,7 @@ function App() {
             </dialog>
           </div>
         </header>
-        <div className="mt-7 sm:w-[480px] bg-[#C15C5C] min-h-[250px] mx-auto rounded flex flex-col items-center gap-4 py-6">
+        <div className="mt-7 sm:w-[480px] bg-opacity-20 bg-white min-h-[250px] mx-auto rounded flex flex-col items-center gap-4 py-6">
           <div className="flex gap-2 justify-center items-center">
             <button
               onClick={() => {
